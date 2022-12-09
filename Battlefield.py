@@ -5,7 +5,7 @@ class Battlefield:
 
     def __init__ (self):
         self.dinosaur = Dinosaur("T-Rex", 400)
-        self.robot = Robot("Terminator", 400 )
+        self.robot = Robot("Terminator", 400)
         pass
     
     def run_game(self):
@@ -20,7 +20,8 @@ class Battlefield:
 
     def battle_phase(self):
         while self.dinosaur.health and self.robot.health > 0:
-        self.dinosaur.attack(self.robot)
+            print(f"\nLet the Games Begin! {self.dinosaur.health and self.robot.health}")
+          
 
         pass
 
