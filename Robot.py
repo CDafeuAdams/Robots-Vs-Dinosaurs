@@ -8,5 +8,5 @@ class Robot:
         self.active_weapon = Weapon("shotgun", 100)
 
     def attack (self, dinosaur):
-        self.robot = Robot(100)
+        dinosaur.health -= self.active_weapon.attack_power
         pass
